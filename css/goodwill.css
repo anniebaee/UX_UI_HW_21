@@ -1,0 +1,104 @@
+/**nav**/
+.cellheader {
+    padding: 3rem;
+    color: #373738;
+   font-size: 20px;
+   height: 0px;
+   width:90%;
+   align-content: center;
+  }
+  .containerheader a{
+    text-decoration: none;
+    color: #373738;
+  }
+  .containerheader a:hover{
+    color:#826fea;
+  }
+  .cellheader{
+    padding:1rem;  
+  }
+  .gridheader{
+    display: grid;
+    grid-template-columns: 10fr 1fr 1fr 1fr 1fr;
+    grid-gap: 3em;
+    align-items: center;
+  }
+  /**end of header**/
+body{
+    margin-top:20px;
+    margin: 100px;
+}
+.content{
+    text-align: center;
+}
+.timeline-steps {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap
+}
+
+.timeline-steps .timeline-step {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    margin: 1rem
+}
+h1{
+    text-align: center;
+    color:red;
+}
+h2{
+    text-align: center;
+    opacity:0.8;
+}
+.data{
+  margin: auto;
+  display:block;
+}
+
+@media (min-width:768px) {
+    .timeline-steps .timeline-step:not(:last-child):after {
+        content: "";
+        display: block;
+        border-top: .25rem dotted #3b82f6;
+        width: 3.46rem;
+        position: absolute;
+        left: 7.5rem;
+        top: .3125rem
+    }
+    .timeline-steps .timeline-step:not(:first-child):before {
+        content: "";
+        display: block;
+        border-top: .25rem dotted #3b82f6;
+        width: 3.8125rem;
+        position: absolute;
+        right: 7.5rem;
+        top: .3125rem
+}
+
+.timeline-steps .timeline-content {
+    width: 10rem;
+    text-align: center
+}
+
+.timeline-steps .timeline-content .inner-circle {
+    border-radius: 1.5rem;
+    height: 1rem;
+    width: 1rem;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #3b82f6
+}
+
+.timeline-steps .timeline-content .inner-circle:before {
+    content: "";
+    background-color: #3b82f6;
+    display: inline-block;
+    height: 3rem;
+    width: 3rem;
+    min-width: 3rem;
+    border-radius: 6.25rem;
+    opacity: .5
+}
